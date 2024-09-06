@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
   <img src="resources/mmdet-logo.png" width="600"/>
   <div>&nbsp;</div>
@@ -453,3 +454,6 @@ This project is released under the [Apache 2.0 license](LICENSE).
 - [MIM](https://github.com/open-mmlab/mim): MIM installs OpenMMLab packages.
 - [MMEval](https://github.com/open-mmlab/mmeval): A unified evaluation library for multiple machine learning libraries.
 - [Playground](https://github.com/open-mmlab/playground): A central hub for gathering and showcasing amazing projects built upon OpenMMLab.
+=======
+# mmdetection
+>>>>>>> ee23d5ce826d85053733f32bf2a045b57fe70cb3
