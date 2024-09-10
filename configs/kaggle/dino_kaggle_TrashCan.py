@@ -27,9 +27,9 @@ classes = ('animal_crab','animal_eel','animal_etc','animal_fish','animal_shells'
 num_classes=22
 dataset_type = 'CocoDataset'  # 数据集类型，这将被用来定义数据集。
 # 本地训练
-# data_root='../../datasets/TrashCan/dataset/dataset/instance_version/'
+data_root='../../datasets/TrashCan/dataset/dataset/instance_version/'
 # kaggle训练
-data_root='../TrashCan/instance_version/'
+#data_root='../TrashCan/instance_version/'
 
 max_epochs=80
 train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=max_epochs, val_interval=1)
@@ -40,7 +40,7 @@ model = dict(
     bbox_head=dict(num_classes=num_classes))
 
 train_dataloader = dict(
-    batch_size=2,
+    batch_size=16,
     dataset=dict(
         type=dataset_type,
         metainfo=dict(classes=classes),
@@ -48,7 +48,7 @@ train_dataloader = dict(
         ann_file='instances_train_trashcan.json',
         data_prefix=dict(img='train/')))
 val_dataloader = dict(
-    batch_size=2,
+    batch_size=16,
     dataset=dict(
         type=dataset_type,
         metainfo=dict(classes=classes),
