@@ -29,7 +29,7 @@ dataset_type = 'CocoDataset'  # 数据集类型，这将被用来定义数据集
 # 本地训练
 #data_root='../../datasets/TrashCan/dataset/dataset/instance_version/'
 # kaggle训练
-data_root='../TrashCan/dataset/dataset/instance_version/'
+data_root='../TrashCan/instance_version/'
 
 max_epochs=80
 train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=max_epochs, val_interval=1)
