@@ -40,7 +40,7 @@ model = dict(
     bbox_head=dict(num_classes=num_classes))
 
 train_dataloader = dict(
-    batch_size=16,
+    batch_size=8,
     dataset=dict(
         type=dataset_type,
         metainfo=dict(classes=classes),
@@ -48,7 +48,7 @@ train_dataloader = dict(
         ann_file='instances_train_trashcan.json',
         data_prefix=dict(img='train/')))
 val_dataloader = dict(
-    batch_size=16,
+    batch_size=8,
     dataset=dict(
         type=dataset_type,
         metainfo=dict(classes=classes),
