@@ -26,9 +26,10 @@ classes = ('animal_crab','animal_eel','animal_etc','animal_fish','animal_shells'
 
 num_classes=22
 dataset_type = 'CocoDataset'  # 数据集类型，这将被用来定义数据集。
-data_root='TrashCan/dataset/instance_version'
-# data_root='../../TrashCan/dataset/instance_version'
-# data_root = 'D:/shared/tutor/Experimental/datasets/fujiazhuang/' # 数据的根路径
+# 本地训练
+data_root='../../datasets/TrashCan/dataset/dataset/instance_version/'
+# kaggle训练
+#data_root='../TrashCan/dataset/dataset/instance_version/'
 
 max_epochs=80
 train_cfg = dict(type='EpochBasedTrainLoop', max_epochs=max_epochs, val_interval=1)
